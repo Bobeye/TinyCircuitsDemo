@@ -272,7 +272,7 @@ void loop() {
   
   framecount++;
   
-  if(display.getButtons()){
+  if(display.getButtons() == 1){ // Decide which button is to serve as the controller button
     wingPos=(framecount)%3;
     flappyBirdY-=(birdYmod*2);
     if(flappyBirdY<0)
